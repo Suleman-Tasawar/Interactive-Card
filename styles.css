@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 12px;
+}
+
+/*For the Layout of The design*/
+.checkout__Page {
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.UI {
+  background-image: url("images/bg-main-desktop.png");
+  width: 350px;
+  height: 730px;
+}
+
+.card__example {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-image: url("images/bg-card-front.png");
+  background-size: cover;
+  width: 350px;
+  height: 200px;
+  border-radius: 13px;
+  color: #fafafa;
+}
+.card__upper {
+  display: inline-flex;
+}
+
+.circle1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #fafafa;
+}
+
+.circle2 {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fafafa;
+  border-radius: 50px;
+}
+
+.card__details {
+  display: inline-flex;
+  padding-top: 2rem;
+}
+
+.mmyy {
+  padding-left: 6rem;
+}
+
+/*For the second card*/
+.card__illustration {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  background-image: url("images/bg-card-back.png");
+  background-size: cover;
+  width: 350px;
+  height: 200px;
+}
+
+.card__illustration p {
+  color: hsl(0, 0%, 100%);
+  padding-top: 5.7rem;
+  padding-left: 18rem;
+}
+/*FOr the sucessful submittion*/
+.sucessfull__page {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 700px;
+  background-color: #fafafa;
+}
+
+/*for the form*/
+.form {
+  line-height: 3;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(278, 68%, 11%);
+}
+
+.card__name input,
+.card__num input {
+  border: 1px solid lightgrey;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.imp__data input,
+.cvc input {
+  outline: none;
+  width: 50px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.imp__data {
+  display: inline-flex;
+  
+}
+
+/*FOr the stacking of input fielda*/
+
+/*For the button*/
+.submit__button {
+  width: 270px;
+  height: 40px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+input:valid {
+  border: 1px solid;
+  border-image: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  border-image-slice: 0.8;
+  border-image-width: 1px;
+}
+
+input:invalid {
+  border: 1px solid tomato;
+}
+
+.error p{
+  color: tomato;
+}
+
+.mm-yy {
+  display: inline-flex;
+}
+
+
+/*For the attribution*/
+.attribution {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 768px) {
+  .checkout__Page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .UI {
+    width: 450px;
+    height: 450px;
+  }
+
+  /*for the card a*/
+  .card__example {
+    top: 50%;
+    left: 10%;
+    width: 320px;
+  }
+
+  .card__illustration {
+    top: 10%;
+    width: 350px;
+  }
+
+  .form {
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  .sucessfull__page {
+    height: 400px;
+    padding-top: 1rem;
+  }
+}
+
+
