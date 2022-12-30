@@ -100,33 +100,50 @@
             </div>
           </div>
 
-          <div class="mm-yy">
-            <label>Exp. Date (MM/YY)</label>
+          <div class="month__year__cvc">
+            <div class="mm-yy">
+              <div class="label">
+                <label>Exp. Date (MM/YY)</label>
+              </div>
 
-            <input type="text" class="month" placeholder="MM" pattern="[A-Z]{3}" required />
+              <div class="label__text" style="display: inline-flex">
+                <input
+                  type="text"
+                  class="month"
+                  placeholder="MM"
+                  pattern="[A-Z]{3}"
+                  required
+                />
 
-            <div id="month__error"></div>
+                <div id="month__error"></div>
 
-            <input
-              type="text"
-              class="year"
-              placeholder="YY"
-              pattern="[0-9]{2}"
-              required
-            />
-            <div id="year__error" class="error"></div>
-          </div>
+                <input
+                  type="text"
+                  class="year"
+                  placeholder="YY"
+                  pattern="[0-9]{2}"
+                  required
+                />
+                <div id="year__error" class="error"></div>
+              </div>
+            </div>
 
-          <div class="cvc">
-            <label>CVC</label>
-            <input
-              type="text"
-              class="cvcs"
-              placeholder="e.g.123"
-              pattern="[0-9]{3}"
-              required
-            />
-            <div id="cvc__error" class="error"></div>
+            <div class="cvc">
+              <div class="label">
+                <label>CVC</label>
+              </div>
+
+              <div class="label__text">
+                <input
+                  type="text"
+                  class="cvcs"
+                  placeholder="e.g.123"
+                  pattern="[0-9]{3}"
+                  required
+                />
+                <div id="cvc__error" class="error"></div>
+              </div>
+            </div>
           </div>
 
           <div>

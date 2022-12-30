@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
         let CardHolderYear = document.querySelector(".year");
         let CardHolderCvc = document.querySelector(".cvcs");
 
-        console.log(CardHolderName.value,CardHolderNum.value,CardHolderMonth.value,CardHolderYear.value,CardHolderCvc.value);
+        //console.log(CardHolderName.value,CardHolderNum.value,CardHolderMonth.value,CardHolderYear.value,CardHolderCvc.value);
         let CardNameDisplay = document.querySelector(".CardNameShow");
         let CardNumDisplay = document.querySelector(".CardNumberShow");
         let CardCvcDisplay = document.querySelector(".CardCvcShow");
@@ -39,48 +39,54 @@ form.addEventListener("submit", (event) => {
         CardNameDisplay.textContent = CardHolderName.value;
         CardNumDisplay.textContent = CardHolderNum.value;
         CardCvcDisplay.textContent = CardHolderCvc.value;
-        CardMonthYearDisplay.textContent = CardHolderMonth.value +"/" +  CardHolderYear.value;
+        CardMonthYearDisplay.textContent = CardHolderMonth.value + "/" + CardHolderYear.value;
     }
+    /*
+    Working on it!!!!
     else {
         sucess.style.display = "none";
+        const field = document.querySelectorAll("input");
+        field.style.border = "1px solid red";
 
         if (!card__name.checkValidity()) {
                 
-            name__error.innerHTML = "<p>Enter correct Name</p>";
+            name__error.textContent = "Enter correct Name";
         } else {
-            name__error.innerHTML = "";
+            name__error.textContent = "";
         }
 
 
         if (!card__num.checkValidity()) {
                 
-            num__error.innerHTML = "<p>Enter correct Card Number</p>";
+            num__error.textContent = "Enter correct Card Number";
          } else {
-            num__error.innerHTML = "";
+            num__error.textContent = "";
         }
 
         if (!card__month.checkValidity()) {
                 
-            month__error.innerHTML = "<p>Enter correct Expiry Month</p>";
+            month__error.textContent = "Enter correct Expiry Month";
         } else {
-            month__error.innerHTML = "";
+            month__error.textContent = "";
         }
 
         if (!card__year.checkValidity()) {
                 
-            year__error.innerHTML = "<p>Enter correct Expiry Year</p>";
+            year__error.textContent = "Enter correct Expiry Year";
         } else {
-            year__error.innerHTML = "";
+            year__error.textContent = "";
         }
 
         if (!card__cvc.checkValidity())
         {
                 
-            cvc__error.innerHTML = "<p>Enter correct CVC</p>";
+            cvc__error.textContent = "Enter correct CVC";
         } else {
-            cvc__error.innerHTML = "";
+            cvc__error.textContent = "";
         }
-        }
+        }*/
+        
 });
+
 
 

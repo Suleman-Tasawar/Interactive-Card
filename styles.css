@@ -13,8 +13,8 @@
 
 .UI {
   background-image: url("images/bg-main-desktop.png");
-  width: 350px;
-  height: 730px;
+  width: 360px;
+  height: 100vh;
 }
 
 .card__example {
@@ -111,12 +111,18 @@
 
 .month,
 .year,
-.cvcs{
+.cvcs {
   outline: none;
   width: 50px;
   height: 30px;
   border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+.month__year__cvc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*For the button*/
@@ -127,7 +133,7 @@
   color: #fafafa;
   border-radius: 5px;
 }
-
+/*
 input:active :valid {
   border: 1px solid;
   border-image: linear-gradient(
@@ -142,11 +148,10 @@ input:active :valid {
 input:invalid{
   border: 1px solid tomato;
 }
-
-.error p {
+*/
+.error {
   color: tomato;
 }
-
 
 /*For the attribution*/
 .attribution {
@@ -164,7 +169,7 @@ input:invalid{
   }
 
   .UI {
-    width: 450px;
+    width: 490px;
     height: 450px;
   }
 
