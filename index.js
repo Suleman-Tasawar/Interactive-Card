@@ -24,8 +24,23 @@ form.addEventListener("submit", (event) => {
         close__sucess.addEventListener("click", () => {
             sucess.style.display = "none";
         })
-    }
 
+        let CardHolderName = document.querySelector(".name");
+        let CardHolderNum = document.querySelector(".number");
+        let CardHolderMonth = document.querySelector(".month");
+        let CardHolderYear = document.querySelector(".year");
+        let CardHolderCvc = document.querySelector(".cvcs");
+
+        console.log(CardHolderName.value,CardHolderNum.value,CardHolderMonth.value,CardHolderYear.value,CardHolderCvc.value);
+        let CardNameDisplay = document.querySelector(".CardNameShow");
+        let CardNumDisplay = document.querySelector(".CardNumberShow");
+        let CardCvcDisplay = document.querySelector(".CardCvcShow");
+        let CardMonthYearDisplay = document.querySelector(".CardMonthYearShow");
+        CardNameDisplay.textContent = CardHolderName.value;
+        CardNumDisplay.textContent = CardHolderNum.value;
+        CardCvcDisplay.textContent = CardHolderCvc.value;
+        CardMonthYearDisplay.textContent = CardHolderMonth.value +"/" +  CardHolderYear.value;
+    }
     else {
         sucess.style.display = "none";
 

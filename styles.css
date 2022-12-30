@@ -79,12 +79,14 @@
 }
 /*FOr the sucessful submittion*/
 .sucessfull__page {
+  padding-top: 2rem;
   display: none;
   position: absolute;
   text-align: center;
   width: 500px;
   height: 700px;
   background-color: #fafafa;
+  margin-left: 4rem;
 }
 
 /*for the form*/
@@ -107,21 +109,15 @@
   border-radius: 5px;
 }
 
-.imp__data input,
-.cvc input {
+.month,
+.year,
+.cvcs{
   outline: none;
   width: 50px;
   height: 30px;
   border: 1px solid lightgrey;
   border-radius: 5px;
 }
-
-.imp__data {
-  display: inline-flex;
-  
-}
-
-/*FOr the stacking of input fielda*/
 
 /*For the button*/
 .submit__button {
@@ -132,7 +128,7 @@
   border-radius: 5px;
 }
 
-input:valid {
+input:active :valid {
   border: 1px solid;
   border-image: linear-gradient(
     to right,
@@ -143,16 +139,12 @@ input:valid {
   border-image-width: 1px;
 }
 
-input:invalid {
+input:invalid{
   border: 1px solid tomato;
 }
 
-.error p{
+.error p {
   color: tomato;
-}
-
-.mm-yy {
-  display: inline-flex;
 }
 
 
@@ -198,5 +190,3 @@ input:invalid {
     padding-top: 1rem;
   }
 }
-
-
