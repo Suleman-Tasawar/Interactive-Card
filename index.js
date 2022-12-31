@@ -41,51 +41,8 @@ form.addEventListener("submit", (event) => {
         CardCvcDisplay.textContent = CardHolderCvc.value;
         CardMonthYearDisplay.textContent = CardHolderMonth.value + "/" + CardHolderYear.value;
     }
-    /*
-    Working on it!!!!
-    else {
-        sucess.style.display = "none";
-        const field = document.querySelectorAll("input");
-        field.style.border = "1px solid red";
-
-        if (!card__name.checkValidity()) {
-                
-            name__error.textContent = "Enter correct Name";
-        } else {
-            name__error.textContent = "";
-        }
-
-
-        if (!card__num.checkValidity()) {
-                
-            num__error.textContent = "Enter correct Card Number";
-         } else {
-            num__error.textContent = "";
-        }
-
-        if (!card__month.checkValidity()) {
-                
-            month__error.textContent = "Enter correct Expiry Month";
-        } else {
-            month__error.textContent = "";
-        }
-
-        if (!card__year.checkValidity()) {
-                
-            year__error.textContent = "Enter correct Expiry Year";
-        } else {
-            year__error.textContent = "";
-        }
-
-        if (!card__cvc.checkValidity())
-        {
-                
-            cvc__error.textContent = "Enter correct CVC";
-        } else {
-            cvc__error.textContent = "";
-        }
-        }*/
-        
+    
+    //Working on it!!!!       
 });
 
 
