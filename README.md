@@ -37,9 +37,10 @@ This is a Screenshot of the solution that i build.There are both desktop and mob
 ### Links
 
 - Solution URL: [This is the link to the code.](https://github.com/Suleman-Tasawar/Interactive-Card)
-- Live Site URL: [This is the link to the live site](https://github.com/Suleman-Tasawar/Interactive-Card/)
+- Live Site URL: [This is the link to the live site](https://suleman-tasawar.github.io/Interactive-Card/)
 
 ## My process
+I Started it by building a Desktop First Version cause i love this approch.Then i designed the Card UI.Then i moved to the form 
 
 ### Built with
 
